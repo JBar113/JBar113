@@ -45,7 +45,7 @@ enter{
 <p align="center" class="enter"<!--style="font-size:18px"-->
 <!--<span style="font-size:20px"><b>JOHN L. BARVENIK</b></span><br>-->
 <font size="5"> <b>JOHN L. BARVENIK</b></font><br>
-<font size="3">Catonsville, MD<br>
+
 (443)-900-8131  |  jbarvenik@gmail.com</font>
 </p>
 
