@@ -87,7 +87,7 @@ border: 1px solid gray;
 
 
 
-<iframe src="John Barvenik Portfolio Draft 1-23-2020.pdf" width="100%" height="800px" ></iframe>
+<iframe src="John Barvenik Portfolio 1-23-2020.pdf" width="100%" height="800px" ></iframe>
 
 </body>
 
