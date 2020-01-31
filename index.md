@@ -7,34 +7,81 @@
 th.leftAlign{
 text-align: left;
 }
-</style>
-<style>
-body{
 
+body{
+	height: 100%
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 	margin-left: 50px;
 	margin-right: 50px;
 	
+	background:  url(screenshot02.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	
 	background-color: lightBlue;
-	background-image: linear-gradient(lightBlue,white);
-}
-</style>
-
-<style>
-
-enter{
-	animation-name: eg;
-	animation-duration: 1s;
 }
 
 
-@keyframes eg {
-0% {left: 0px;}
-100% {left: 50px;}
+
+.img-container{
+float:left;
+width: 31%;
+padding: 5px;
+}
+
+.cfix::after{
+content: "";
+clear:both;
+display:table;
+}
+
+div.tbacktitle{
+	padding: 5px;
+	background-color: rgba(255,255,255,0.5);
+}
+div.tback{
+	padding: 10px;
+	background-color: rgba(255,255,255,0.5);
+}
+
+
+#nav{
+border: 1px solid gray;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #262626;
+	
+}
+
+#navList{
+	float: left;
+	align: center;
+}
+
+#navLink{
+	
+	display: block;
+	border-right: 1px solid DarkCyan;
+	color: White;
+	
+	padding: 16px;
+	text-decoration: none;
+}
+
+#navLink:hover{
+	background-color: DarkCyan;
+}
+
+.active{
+	background-color: CadetBlue;
 }
 </style>
 
 <meta charset="UTF-8">
-<title>JLB Resume Demo Site</title>
+<title>JLB Resume Site</title>
 
 </head>
 
@@ -42,115 +89,53 @@ enter{
 
 <body>
 
+<div class="tbacktitle">
 <p align="center" class="enter"<!--style="font-size:18px"-->
 <!--<span style="font-size:20px"><b>JOHN L. BARVENIK</b></span><br>-->
 <font size="5"> <b>JOHN L. BARVENIK</b></font><br>
-
+<font size="3">Catonsville, MD<br>
 (443)-900-8131  |  jbarvenik@gmail.com</font>
 </p>
+</div>
+<!-- Begin Nav Bar section -->
 
-<!-- Begin edu table section -->
-
-<table style="width:100%">
-<tr>
-<th class="leftAlign"><b>Education</b></th>
-<th class="leftAlign"><b>Academic Awards And Achievements</b></th>
-</tr>
-<tr>
-<td>_________________________________________________</td>
-<td>_________________________________________________</td>
-</tr>
-<tr>
-<td>University of Maryland, Baltimore County (UMBC)</td>
-<td>2015, 2017, 2018 and 2019 - UMBC President's List</td>
-</tr>
-<tr>
-<td>B.A. in Psychology, Minor in Computer Science </td>
-<td>2017 and 2018 - UMBC Dean's List</td>
-</tr>
-<tr>
-<td>Graduated December 2019</td>
-<td>Maryland State Citation from Senator Shirley Nathan-Pulliam</td>
-</tr>
-<tr>
-<td>GPA 3.7/4.0</td>
-<td></td>
-</tr>
-</table>
-
-<!-- Begin Coursework section -->
-<p>
-<b><font size="4"> Coursework</b></font><br>
-Coursework includes basic and advanced undergraduate courses in psychology with an emphasis on development, education, personality, and physiological psychology. Minor work includes exposure to multiple programming languages and higher focus on data management, efficient design, and graphical representation such as rendering.
-<br>
-</p>
-
-<!-- Begin Exp section -->
-<p>
-<b><font size="4"> Experience Highlights</b></font><br>
-Awards for creative product design, fabrication, and team work including national and international competitions involving games and robots. Work and volunteering experience focuses on teaching and mentoring diverse student populations.
-<br>
-
-<ul>
-	<li>Summer Camp Technology Instructor Experience 2015-2019</li>
-	<ul>
-		<li>Instructor for children ages 6-12, class sizes up to 20 students</li>
-		<li>Topics include: Robotics, Stop Motion Animation, Game Design, Modding, Coding</li>
-	</ul>
-	
-	<li>First Robotics Mentor</li>
-	<ul>
-		<li>Four years’ experience mentoring High School robotics team</li>
-		<li>Emphasis on mechanical design, CAD, programming, and presentation coaching</li>
-	</ul>
-	
-	<li>First Robotics Team Member 2013 - 2015</li>
-	<ul>
-		<li>Leader of 7 person team and lead mechanical designer </li>
-		<li>Computer aided design and 3D printing of multiple parts</li>
-	</ul>
-	
-	<li>2013 - Winner of the National Game Design Contest at Marbles the Brain Store </li>
-	<ul>
-		<li>Marbology is sold nationwide at Barnes & Noble, Amazon.com and other retailers</li>
-	</ul>
+<ul id="nav">
+	<li id="navList"><a href="index.html" id="navLink" class="active">Home</a></li>
+	<li id="navList"><a href="resumePage.html" id="navLink">Resume</a></li>
+	<li id="navList"><a href="portfolioPage.html" id="navLink">Portfolio</a></li>
+	<li id="navList"><a href="videosPage.html" id="navLink">Art/Videos</a></li>
 </ul>
 
-</p>
+<br>
 
-<!-- Begin Skills section -->
+<div class="tback">
 <p>
-<b><font size="4">Skills</b></font><br>
-
-<ul>
-	<li>Experience with character creation in Maya, Mudbox and Blender</li>
-	<ul>
-		<li>Modeling in Maya and Blender; understanding of good character topology</li>
-		<li>Familiarity with sculpting and texturing using Mudbox</li>
-		<li>Self-taught rigging in Maya and Blender</li>
-		<li>Developed human rig that includes dual IK/FK functionality to drive a result skeleton</li>
-	</ul>
-	
-	<li>Self-taught basic video game design</li>
-	<ul>
-		<li>Includes experience in Unity with a focus on coding, basic animation, and story writing</li>
-	</ul>
-	
-	<li>Critical thinking, problem solving, and systems analysis</li>
-	<li>Communication, leadership, and group dynamics</li>
-	<li>Object Oriented Programming; C++, C#, Java; Data Management/Storage</li>
-	<li>Computer aided design using PTC Creo</li>
-	<li>Mechanical design</li>
-	<li>Strong writing skills</li>
-</ul>
+<font size="4">
+Hello!<br><br>
+My name is John Barvenik. Welcome to my website dedicated to displaying my resume, portfolio, and progress on some of my projects. I have a B.A. in psychology from the University of Maryland Baltimore County and a minor in computer science.<br>
 
 </p>
 
 <p>
-Below you can find a short portfolio that details some of my work.<br>
+Psychology was my primary area of study. While a B.A. gives a great and varied breadth of knowledge in the domain, I have several primary areas of interest. First, I selected courses specific to child development and education due to my interest in developing intelligence and enthusiasm for teaching. In addition, I sought out courses for physiological psychology to bolster my understanding of empirical research on the inner workings of the nervous system.<br>
+</p>
+<p>
+In computer science, I took courses geared particularly towards graphics, animation, and efficient design. As such, I understand the basic principles of the rendering pipeline and have experience creating ray tracers, rasterizers, and generated animation. Most of my work was done in C++, although I also have exposure to C, C#, Java, Haskell, Assembly code, and HTML.<br>
+</p>
+<p>
+<i>
+Fun fact: Basic neural network models of image recognition in computer science share many similarities with theories on how the brain parses and identifies visual information. <br>
+</i>
 </p>
 
-<iframe src="John Barvenik Portfolio Draft 1-23-2020.pdf" width="100%" height="700px" ></iframe>
+<p>
+Beyond formal education, I have also taught myself the fundamentals animation and game design software including the Unity Engine, Blender, Maya, and Mudbox. I am constantly workshopping, discussing, and collaborating on ideas, systematically doing research, and putting in the work towards the goal of producing my game design visions that have arisen over the years. Working on game development is more than just a career goal, it is something I take pride and immense joy in.
+<br>
+<p>
+My goal: to become a professional game developer. It is my central drive is to create stories and experiences through the same medium that captured my heart as a child. I already have a wide variety of relevant capabilities developed through coursework, self-taught skills, teamwork, and board game design. Now I am seeking an avenue to work with a team of like-minded people and put these abilities to use and to build great adventures.<br>
+</p>
+</font>
+</div>
 
 </body>
 
