@@ -111,10 +111,10 @@ border: 1px solid gray;
 <!-- Begin Nav Bar section -->
 
 <ul id="nav">
-	<li id="navList"><a href="index.html" id="navLink" >Home</a></li>
-	<li id="navList"><a href="resumePage.html" id="navLink">Resume</a></li>
-	<li id="navList"><a href="portfolioPage.html" id="navLink">Portfolio</a></li>
-	<li id="navList"><a href="videosPage.html" id="navLink" class="active">Art/Videos</a></li>
+	<li id="navList"><a href="index.md" id="navLink" >Home</a></li>
+	<li id="navList"><a href="resumePage.md" id="navLink">Resume</a></li>
+	<li id="navList"><a href="portfolioPage.md" id="navLink">Portfolio</a></li>
+	<li id="navList"><a href="videosPage.md" id="navLink" class="active">Art/Videos</a></li>
 </ul>
 
 <p>
