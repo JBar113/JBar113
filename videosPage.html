@@ -16,47 +16,7 @@ body{
 	margin-right: 50px;
 	
 	background-color: lightBlue;
-	background-image: linear-gradient(lightBlue,white);
-}
-
-div.gallary{
-	margin:2px;
-	border: 1px solid black;
-	float: left;
-	width: 24%;
-}
-
-div.gallary img{
-width:100%;
-height: auto;
-}
-
-div.vgallary{
-	margin:2px;
-	border: 1px solid black;
-	float: left;
-	width: 40%;
-}
-
-div.vgallary iframe{
-width:100%;
-}
-
-div.info{
-padding:10px;
-text-align:center;
-}
-
-
-enter{
-	animation-name: eg;
-	animation-duration: 1s;
-}
-
-
-@keyframes eg {
-0% {left: 0px;}
-100% {left: 50px;}
+	background-image: linear-gradient(#80bfff,lightBlue,#ede7a4);
 }
 
 #nav{
@@ -91,6 +51,79 @@ border: 1px solid gray;
 .active{
 	background-color: CadetBlue;
 }
+
+.flex-container-container{
+	background-color: lightBlue;
+	border-left: 4px solid #663300;
+	border-right: 4px solid #663300;
+	border-bottom: 4px solid #663300;
+}
+.flex-container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: baseline;
+}
+	
+.flex-container > div {
+	background-color: white;
+	margin: 4px;
+	padding: 0px;
+	text-align: center;
+	width: 20%;
+}
+
+.imgTest{
+	height: auto;
+	width: 600px;
+}
+
+.leftVid{
+	float: left;
+}
+
+.rightVid{
+	float: right;
+}
+
+.clearfix{
+	overflow:auto;
+}
+
+.fVidsContainer{
+	background-color: #99ccff;
+	background-image: linear-gradient(#99ccff,lightBlue);
+	border-left: 4px solid #663300;
+	border-right: 4px solid #663300;
+}
+.vidsText{
+	padding: 10px;
+	text-align: center;
+}
+
+
+.flex-vids{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: baseline;
+}
+
+.flex-vids > div {
+	background-color: white;
+	margin: 4px;
+	padding: 0px;
+	text-align: center;
+	width: 45%;
+}
+
+.flex-vids > div > iframe {
+	width: 100%;
+	
+	min-height: 315px;
+}
+
+
 </style>
 <meta charset="UTF-8">
 <title>JLB Resume Site</title>
@@ -117,112 +150,72 @@ border: 1px solid gray;
 	<li id="navList"><a href="videosPage.html" id="navLink" class="active">Art/Videos</a></li>
 </ul>
 
-<p>
-<font size="4">
-This page showcases the progress for my game "A Grim Day Out". There is a combination of finished content and concept work.
-</font>
-<br>
-</p>
-
-<p>
-<font size="4">
-This video shows the full gameplay for A Grim Day Out in its current state.
-</font>
-<br>
-</p>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/h4xEQmrX4O8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<br>
-
-<p>
-<font size="3">
-This video is an animation demo of both used and currently unimplemented animations for the player character.
-</font>
-<br>
-</p>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/FCDpmNUAMLo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<br>
-
-<!-- Begin Art section -->
-<p>
-<font size="3">
-These are concept works for creatures and enemies that are not yet implemented. Due to the simple aesthetics of the game, they didn't need much revision before being modeled.
-<br>
-One of the future game mechanics is picking up and throwing objects (including the boxes and barrels seen through the level). This would also extend to enemies and creatures that are knocked over.
-</font>
-<br>
-</p>
-
-<div class="gallary">
-	<img src="bird00.jpg" width="600" height="400"></img>
-	<div class="info">Original Sketch for a bird creature.</div>
+<!-- begin content-->
+<div class="fVidsContainer">
+	<div class="vidsText">
+		<font size="4">
+			This page showcases the progress for my game "A Grim Day Out". There is a combination of finished content and concept work.
+		</font>
+	</div>
+	
+	<div class="flex-vids">
+		
+		<div><iframe src="https://www.youtube.com/embed/h4xEQmrX4O8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			This video shows the full gameplay for A Grim Day Out in its current state.
+		</div>
+		<div><iframe src="https://www.youtube.com/embed/h4xEQmrX4O8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			This video is an animation demo of both used and currently unimplemented animations for the player character.
+		</div>
+	</div>
+	
+	<div class="vidsText">
+		<font size="3">
+		<br>Down below are concept works for creatures and enemies that are not yet implemented. Due to the simple aesthetics of the game, they didn't need much revision before being modeled.
+		<br>
+		<br>
+		One of the future game mechanics is picking up and throwing objects (including the boxes and barrels seen through the level). This would also extend to enemies and creatures that are knocked over.
+		</font>
+	</div>
 </div>
 
-<div class="gallary">
-	<img src="bandit00.jpg" width="600" height="400"></img>
-	<div class="info">Original Sketch for a bandit enemy.</div>
+<!--Images-->
+<div class="flex-container-container">
+<div class="flex-container">
+	
+	<div><img src="bird00.jpg" width="100%" height="auto"></img>Original Sketch for a bird creature.</div>
+	<div><img src="bandit00.jpg" width="100%" height="auto"></img>Original Sketch for a bandit enemy.</div>
+	<div><img src="crab00.jpg" width="100%" height="auto"></img>Original Sketch for a crab creature.</div>
+	<div><img src="wizard00.jpg" width="100%" height="auto"></img>Original Sketch for a floating wizard enemy.</div>
+	
 </div>
-
-<div class="gallary">
-	<img src="crab00.jpg" width="600" height="400"></img>
-	<div class="info">Original Sketch for a crab creature.</div>
+<div class="flex-container">
+	
+	<div><img src="bird02.jpg" width="100%" height="auto"></img>A work in progress bird model.</div>
+	<div><img src="bandit02.jpg" width="100%" height="auto"></img>A work in progress bandit model.</div>
+	<div><img src="crab02.jpg" width="100%" height="auto"></img>A work in progress crab model.</div>
+	<div><img src="floater02.jpg" width="100%" height="auto"></img>A work in progress wizard model.</div>
+	
 </div>
-<div class="gallary">
-	<img src="wizard00.jpg" width="600" height="400"></img>
-	<div class="info">Original Sketch for a floating wizard enemy.</div>
+<div class="flex-container">
+	
+	<div><img src="bird03.jpg" width="100%" height="auto"></img>Textured bird model.</div>
+	<div><img src="bandit03.jpg" width="100%" height="auto"></img>Textured bandit model.</div>
+	<div><img src="crab03.jpg" width="100%" height="auto"></img>Textured crab model.</div>
+	<div><img src="floater03.jpg" width="100%" height="auto"></img>Textured wizard model.</div>
+	
 </div>
-
-
-
-
-<div class="gallary">
-	<img src="bird01.jpg" width="600" height="400"></img>
-	<div class="info">A work in progress bird model.</div>
+<div class="flex-container">
+	
+	<div><iframe width="100%" height="auto" src="https://www.youtube.com/embed/yBH_koyTpRo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	Early bird animations. In addition to hopping and flying, it has a "hit" animation where it gets partially flattened. This would be used if an object were thrown at it.</div>
+	<div><iframe width="100%" height="auto" src="https://www.youtube.com/embed/xQlgc-zFqIs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	Early bandit animations. He features an arm swinging attack as well as a dive. He also has "hit" animations and an idle animation for when he is knocked on his back.</div>
+	<div><iframe width="100%" height="auto" src="https://www.youtube.com/embed/nUos3AsHW4k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	Early crab animations. As it was developed more recently, it doesn't have many finished animations. In the final version it will also be able to get hit and flipped over to be picked up by the player.</div>
+	<div><iframe width="100%" height="auto" src="https://www.youtube.com/embed/Nd9OYUd1GeI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	Early wizard animations. This enemy will not need as many animations as it couldn't be knocked over. Instead it will hover above the ground, cast magic, and only die if hit by a thrown object.</div>
+	
 </div>
-
-<div class="gallary">
-	<img src="bandit01.jpg" width="600" height="400"></img>
-	<div class="info">A work in progress bandit model.</div>
 </div>
-
-<div class="gallary">
-	<img src="crab01.jpg" width="600" height="400"></img>
-	<div class="info">A work in progress crab model.</div>
-</div>
-
-<div class="gallary">
-	<img src="wizard01.jpg" width="600" height="400"></img>
-	<div class="info">A work in progress wizard model.</div>
-</div>
-
-<br>
-
-
-<!-- VIDEOS -->
-
-<div class="vgallary">
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/yBH_koyTpRo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	<div class="info">Early bird animations. In addition to hopping and flying, it has a "hit" animation where it gets partially flattened. This would be used if an object were thrown at it.</div>
-</div>
-
-<div class="vgallary">
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/xQlgc-zFqIs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	<div class="info">Early bandit animations. He features an arm swinging attack as well as a dive. He also has "hit" animations and an idle animation for when he is knocked on his back.</div>
-</div>
-
-<div class="vgallary">
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/nUos3AsHW4k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	<div class="info">Early crab animations. As it was developed more recently, it doesn't have many finished animations. In the final version it will also be able to get hit and flipped over to be picked up by the player.</div>
-</div>
-
-<div class="vgallary">
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/Nd9OYUd1GeI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	<div class="info">Early wizard animations. This enemy will not need as many animations as it couldn't be knocked over. Instead it will hover above the ground, cast magic, and only die if hit by a thrown object.</div>
-</div>
-<div class="clearfix"></div>
-
-</body>
 
 </html>
