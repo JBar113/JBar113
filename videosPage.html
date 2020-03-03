@@ -52,12 +52,30 @@ border: 1px solid gray;
 	background-color: CadetBlue;
 }
 
-.flex-container-container{
+.hero-container{
 	background-color: lightBlue;
+	margin-top: 10px;
+	border-top: 4px solid #663300;
 	border-left: 4px solid #663300;
 	border-right: 4px solid #663300;
 	border-bottom: 4px solid #663300;
 }
+
+.hc-div{
+	
+	margin: 10px;
+}
+
+
+.gdo-container{
+	background-color: lightBlue;
+	margin-top: 10px;
+	border-top: 4px solid #663300;
+	border-left: 4px solid #663300;
+	border-right: 4px solid #663300;
+	border-bottom: 4px solid #663300;
+}
+
 .flex-container{
 	display: flex;
 	flex-wrap: wrap;
@@ -73,29 +91,36 @@ border: 1px solid gray;
 	width: 20%;
 }
 
-.imgTest{
-	height: auto;
-	width: 600px;
+.flex-container-h{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: baseline;
+}
+	
+.flex-container-h > div {
+	background-color: white;
+	margin: 2px;
+	padding: 0px;
+	text-align: center;
+	width: 49%;
 }
 
-.leftVid{
-	float: left;
+.flex-container-hS{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: baseline;
+}
+	
+.flex-container-hS > div {
+	
+	margin: 2px;
+	padding: 0px;
+	
+	width: 31%;
 }
 
-.rightVid{
-	float: right;
-}
-
-.clearfix{
-	overflow:auto;
-}
-
-.fVidsContainer{
-	background-color: #99ccff;
-	background-image: linear-gradient(#99ccff,lightBlue);
-	border-left: 4px solid #663300;
-	border-right: 4px solid #663300;
-}
 .vidsText{
 	padding: 10px;
 	text-align: center;
@@ -151,10 +176,64 @@ border: 1px solid gray;
 </ul>
 
 <!-- begin content-->
-<div class="fVidsContainer">
+
+<div class="hero-container">
+
+<div style="margin:10px;">
+3/2/2020 Update:
+<p align="left">
+Work in progress for a character I have collaborated on with another designer. This is a draft of the protagonist for a short project we are developing. We wanted to be able to see the character in 3d in order to refine his design further, and to have a model that we could begin making prototype poses and animation with.
+<br>
+<br>
+The character was designed by us both. Pictured below are some early sketches I did of various parts of his outfit. I then handed off my work to my partner so that he could produce a full draft of his design.
+<br>
+</p>
+</div>
+
+<div class="flex-container-hS">
+	<div><img src="h_sketch01.jpg" width="100%" height="auto"></img></div>
+	<div><img src="h_sketch02.jpg" width="100%" height="auto"></img></div>
+	<div><img src="h_sketch03.jpg" width="100%" height="auto"></img></div>
+</div>
+
+<div style="margin:10px;">
+<p align="left">
+After getting back the design art, I created a low-poly model and then refined it into a high-poly sculpt.</p>
+</div>
+
+<div class="flex-container-h">
+	
+	<div><img src="ss01.png" width="100%" height="auto"></img>Low poly draft model beside the concept sketch provided by my partner.</div>
+	<div><img src="ss02.png" width="100%" height="auto"></img>Overlapping image and model. Slight modifications were made to proportions and accessories.</div>
+	
+</div>
+
+<div class="flex-container-h">
+	
+	<div><img src="ss03.png" width="100%" height="auto"></img>Closeup of low-poly draft.</div>
+	<div><img src="ss04.png" width="100%" height="auto"></img>High-poly sculpt of face and clothes.</div>
+	
+</div>
+
+<div style="margin:10px;">
+<p align="left">
+Finally, simple textures were put in place using the palette we decided upon. Most of the colors are simple and solid because we are just trying to get a feel for the character, although the face has more defined detail.<br>
+</p>
+</div>
+
+<div class="flex-container-h">
+	
+	<div><img src="ss06.png" width="100%" height="auto"></img>Texture draft with colored sketch</div>
+	<div><img src="ss05.png" width="100%" height="auto"></img>Perspective view of textured model.</div>
+	
+</div>
+
+</div>
+
+<div class="gdo-container">
 	<div class="vidsText">
 		<font size="4">
-			This page showcases the progress for my game "A Grim Day Out". There is a combination of finished content and concept work.
+			This part of the page showcases the progress for my game "A Grim Day Out". There is a combination of finished content and concept work.
 		</font>
 	</div>
 	
@@ -176,10 +255,10 @@ border: 1px solid gray;
 		One of the future game mechanics is picking up and throwing objects (including the boxes and barrels seen through the level). This would also extend to enemies and creatures that are knocked over.
 		</font>
 	</div>
-</div>
+
 
 <!--Images-->
-<div class="flex-container-container">
+
 <div class="flex-container">
 	
 	<div><img src="bird00.jpg" width="100%" height="auto"></img>Original Sketch for a bird creature.</div>
